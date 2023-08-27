@@ -10,7 +10,13 @@
     "verbose": true,
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
-    }
+    },
+    "collectCoverage": true,
+
+    "collectCoverageFrom":[
+      "src/**/*.{js,jsx}",
+      "!vendor/**/*.{js,jsx}"
+    ]
   },
   "author": "Muhammad Farhan",
   "license": "ISC",
